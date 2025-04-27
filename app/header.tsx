@@ -1,23 +1,37 @@
-import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import Link from 'next/link'
+import { usePathname } from "next/navigation";
 
 export function Header({darkMode, setDarkMode}) {
-
+  const navLinks = [
+    { name: "home", href: "/home" },
+    { name: "about", href: "/about" },
+    { name: "projects", href: "/projects" },
+    { name: "experience", href: "/experience" }
+  ];
+  const pathname = usePathname();
   return (
-    <div className="bg-[#ccc9cd] dark:bg-[#ccc9cd] flex dark:text-white">
-            <div className="pl-12 pt-8">
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className=" cursor-pointer text-2xl"
-                />
-            </div>
-            <div className="space-x-12 flex align-center">
-                <Link href="/home" >home</Link>
-                <Link href="/about" >about</Link>
-                <Link href="/projects" >projects</Link>
-                <Link href="/experience" >experience</Link>
-            </div>
-
-          </div>
+    <div className="bg-[#ccc9cd] dark:bg-[#ccc9cd] flex items-center px-12 p-8">
+      <div className="cursor-pointer ">
+        {darkMode ? 
+        <BsFillSunFill
+        onClick={() => setDarkMode(!darkMode)}
+        className="text-3xl"
+      /> : 
+      <BsFillMoonStarsFill
+          onClick={() => setDarkMode(!darkMode)}
+          className="text-3xl"
+        />
+        }
+      </div>
+      <div className="flex-1 flex justify-center space-x-20 text-lg">
+        {navLinks.map((item) =>
+          <Link key={navLinks.indexOf(item)} href={item.href} className={`hover:font-bold ${pathname.startsWith(item.href) ? "font-bold" : ""}`}>
+            {item.name}
+            </Link>
+            )}
+      </div>
+      <div style={{ width: "2rem" }} />
+    </div>
   )
 }

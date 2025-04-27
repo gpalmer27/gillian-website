@@ -9,9 +9,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="en" className={darkMode ? "dark" : ""}>
-      <head />
+      <head>
+        <link rel=" icon" type="image/jpg" href="/logo.jpg"/>
+        <title>Gillian Palmer</title>
+      </head>
       <body className="min-h-screen flex flex-col">
-        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        <div className="flex flex-col">
+          <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        </div>
         <main className="h-full flex-1 bg-[#e4b8ff] dark:bg-[#e4b8ff] ">{children}</main>
       </body>
     </html>

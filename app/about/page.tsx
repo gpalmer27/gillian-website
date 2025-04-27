@@ -11,7 +11,7 @@ export default function About() {
           className="rounded-lg w-60 h-full sm:w-60 sm:h-full md:w-80 md:h-full lg:w-96 lg:h-full"
         />
       </div>
-      <div className="sm:w-1/2 w-full flex flex-col justify-center items-start px-8">
+      <div className="sm:w-1/2 w-full flex flex-col justify-center items-center sm:items-start px-8">
         <div className="text-4xl font-bold mb-4 pt-4">About Me:</div>
         <div className="mb-6 text-xl sm:pr-12">
           I&apos;m a second-year at Northeastern pursuing a bachelor&apos;s

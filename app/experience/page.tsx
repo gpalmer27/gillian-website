@@ -9,20 +9,41 @@ export default function Experience() {
   return (
     <div className="p-8">
       <div
+        onClick={() => (openBox === 6 ? setOpenBox(0) : setOpenBox(6))}
+        className={boxClass}
+      >
+        <h1 className="text-3xl font-bold">Software Development Co-op</h1>
+        <p className="text-lg pb-2">January 2025 - Present</p>
+        <div
+          className={`${openBox === 6 ? "visibility: visible" : "visibility: hidden"}`}
+        >
+          <hr className="pt-2 dark:border-slate-800"></hr>
+          <p>
+            I am currently working on Odyssey, an interactive learning platform
+            for Khoury College, for my co-op. In this position, I participate in
+            daily standups and work within two-week sprint cycles. I work with
+            Next.js and Tailwind CSS for the frontend and Strapi CMS and
+            PostgreSQL for the backend. I also recently helped transition the
+            deployment from EKS to ECS using the AWS console.
+          </p>
+        </div>
+      </div>
+      <div
         onClick={() => (openBox === 5 ? setOpenBox(0) : setOpenBox(5))}
         className={boxClass}
       >
-        <h1 className="text-3xl font-bold">Software Developer at Sandbox</h1>
-        <p className="text-lg pb-2">August 2024 - Present</p>
+        <h1 className="text-3xl font-bold">Sandbox Head of Community</h1>
+        <p className="text-lg pb-2">January 2025 - Present</p>
         <div
           className={`${openBox === 5 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
-            At Sandbox, I am currently working with a group of developers and
-            designers on Cooper, which is a full-stack co-op review platform for
-            Northeastern students. I also attend weekly stand-ups with my group
-            and participate in code reviews.
+            This year, I organized activities and presentations for members of
+            Sandbox, Northeastern&apos;s student-led software consultency, and I also
+            planned three collaborative events with other Computer Science
+            organizations at Northeastern while managing a budget of
+            approximately $2000.
           </p>
         </div>
       </div>

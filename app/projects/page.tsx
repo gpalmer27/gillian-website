@@ -10,6 +10,39 @@ export default function Projects() {
   return (
     <div className="p-8">
       <div
+        onClick={() => (openBox === 7 ? setOpenBox(0) : setOpenBox(7))}
+        className={boxClass}
+      >
+        <h1 className="text-3xl font-bold ">Cooper - Co-op Review Platform</h1>
+        <p className="text-lg pb-2">September 2024 - Present</p>
+        <div
+          className={`${openBox === 7 ? "visibility: visible" : "visibility: hidden"}`}
+        >
+          <hr className="pt-2 dark:border-slate-800"></hr>
+          <p>
+            {" "}
+            I am currently working with a team of designers and developers in
+            Sandbox, a CS club at Northeastern, to create a full-stack co-op
+            evaluation resource. This project uses the T3 tech stack, and some
+            features that I have added include API endpoints and frontend and
+            backend filtering. We recently had an internal release of our
+            website and plan on having a larger release soon!
+          </p>
+          <div className="space-x-2 pt-2">
+            <button type="button" className={buttonClass}>
+              <a href="https://github.com/sandboxnu/cooper" target="blank">
+                View on GitHub
+              </a>
+            </button>
+            <button type="button" className={buttonClass}>
+              <a href="https://coopernu.vercel.app/" target="blank">
+                View Website
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
         onClick={() => (openBox === 6 ? setOpenBox(0) : setOpenBox(6))}
         className={boxClass}
       >

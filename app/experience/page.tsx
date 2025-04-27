@@ -40,8 +40,8 @@ export default function Experience() {
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
             This year, I organized activities and presentations for members of
-            Sandbox, Northeastern&apos;s student-led software consultency, and I also
-            planned three collaborative events with other Computer Science
+            Sandbox, Northeastern&apos;s student-led software consultency, and I
+            also planned three collaborative events with other Computer Science
             organizations at Northeastern while managing a budget of
             approximately $2000.
           </p>

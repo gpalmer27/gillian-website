@@ -22,7 +22,7 @@ export default function Experience() {
                     <p className="text-lg pb-2">August 2024 - Present</p>
                     <div className={`${openBox === 4 ? "visibility: visible" : "visibility: hidden"}`}>
                     <hr className="pt-2"></hr>
-                        <p>As a member of the outreach committee for Northeastern's Computer Science Mentoring Organization (CoSMO), 
+                        <p>As a member of the outreach committee for Northeastern&apos;s Computer Science Mentoring Organization (CoSMO), 
                             I help plan club events and reach out to other organizations to organize joint events. Most recently, I organized
                             a technical interview prep workshop with Sandbox.</p>
                     </div>

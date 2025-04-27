@@ -5,7 +5,7 @@ export default function HomePage() {
   return (
     <div className="text-center flex flex-col items-center justify-center p-10 py-10 min-h-100vh">
             <h2 className="text-7xl pt-[12%] text-black font-medium animate-slide-in-left">
-              Hi, I'm Gillian!
+              Hi, I&apos;m Gillian!
             </h2>
             <h3 className="text-6xl py-2 pt-4 pb-4 animate-slide-in-right">
               CS @ Northeastern University

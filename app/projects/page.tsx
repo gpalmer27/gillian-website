@@ -59,8 +59,8 @@ export default function Projects() {
         <p className="text-lg pb-2">January 2024 - April 2024</p>
         <div className={`${openBox === 4 ? "visibility: visible" : "visibility: hidden"}`}>
         <hr className="pt-2"></hr>
-            <p>As part of Northeastern's Oasis software development club, I worked with a group to design a website that tracks
-                laundry usage across Northeastern's on-campus housing. We were inspired by the Laundry View website that is used 
+            <p>As part of Northeastern&apos;s Oasis software development club, I worked with a group to design a website that tracks
+                laundry usage across Northeastern&apos;s on-campus housing. We were inspired by the Laundry View website that is used 
                 across colleges, but we wanted to make the interface more user-friendly and visually appealing.
             </p>
             <div className="space-x-2 pt-2">
@@ -83,7 +83,7 @@ export default function Projects() {
         <div className={`${openBox === 3 ? "visibility: visible" : "visibility: hidden"}`}>
         <hr className="pt-2"></hr>
             <p>As a part of my Fundamentals of Computer Science II course, I worked with a partner to make an interactive maze game in 
-                Java. To make this project, we used our knowledge of Kruskal's Algorithm, Breadth-First Search, and Depth-First Search 
+                Java. To make this project, we used our knowledge of Kruskal&apos;s Algorithm, Breadth-First Search, and Depth-First Search 
                 to animate the creation of the maze and the process of solving the maze.</p>
                 <div className="space-x-2 pt-2">
             <button type="button" className={buttonClass}>
@@ -105,7 +105,7 @@ export default function Projects() {
         <div className={`${openBox === 2 ? "visibility: visible" : "visibility: hidden"}`}>
         <hr className="pt-2"></hr>
             <p>As part of my Fundamentals of Computer Science II course, I worked with a partner to write a Seam Carver program,
-                where the path with least significance is calculated using Dijkstra's Algorithm and is removed from the 
+                where the path with least significance is calculated using Dijkstra&apos;s Algorithm and is removed from the 
                 image on every tick.
             </p>
             <div className="space-x-2 pt-2">

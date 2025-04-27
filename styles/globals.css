@@ -23,16 +23,15 @@
 }
 
 ::selection {
-  background: rgb(0, 120, 215); 
+  background: rgb(0, 120, 215);
   color: white;
 }
 
 @keyframes slideInFromRight {
   0% {
-    transform: translateX(100%); 
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(0); 
+    transform: translateX(0);
   }
 }
-

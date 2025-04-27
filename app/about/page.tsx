@@ -1,19 +1,19 @@
 import Image from "next/image";
 export default function About() {
   return (
-    <div className="flex items-center">
-      <div className="w-1/2 pt-12 flex justify-center">
+    <div className="flex flex-col sm:flex-row items-center">
+      <div className="sm:w-1/2 w-full pt-12 flex justify-center">
         <Image
           src="/sandbox_headshot.JPG"
           alt="Website Photo"
           width={400}
           height={400}
-          className="rounded-lg"
+          className="rounded-lg w-60 h-full sm:w-60 sm:h-full md:w-80 md:h-full lg:w-96 lg:h-full"
         />
       </div>
-      <div className="w-1/2 flex flex-col justify-center items-start px-8">
-        <div className="text-4xl font-bold mb-4 ">About Me:</div>
-        <div className="mb-6 text-xl pr-12">
+      <div className="sm:w-1/2 w-full flex flex-col justify-center items-start px-8">
+        <div className="text-4xl font-bold mb-4 pt-4">About Me:</div>
+        <div className="mb-6 text-xl sm:pr-12">
           I&apos;m a second-year at Northeastern pursuing a bachelor&apos;s
           degree in Computer Science with a concentration in Software and a
           minor in Mathematics. In my spare time, I love spending time with

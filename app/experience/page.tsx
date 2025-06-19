@@ -9,22 +9,68 @@ export default function Experience() {
   return (
     <div className="p-8">
       <div
+        onClick={() => (openBox === 9 ? setOpenBox(0) : setOpenBox(9))}
+        className={boxClass}
+      >
+        <h1 className="text-3xl font-bold">Sandbox Technical Lead</h1>
+        <p className="text-lg pb-2">June 2025 - Present</p>
+        <div
+          className={`${openBox === 9 ? "visibility: visible" : "visibility: hidden"}`}
+        >
+          <hr className="pt-2 dark:border-slate-800"></hr>
+          <p>Incoming tech lead for Cooper in Fall 2025!</p>
+        </div>
+      </div>
+      <div
+        onClick={() => (openBox === 8 ? setOpenBox(0) : setOpenBox(8))}
+        className={boxClass}
+      >
+        <h1 className="text-3xl font-bold">CoSMO Co-President</h1>
+        <p className="text-lg pb-2">June 2025 - Present</p>
+        <div
+          className={`${openBox === 8 ? "visibility: visible" : "visibility: hidden"}`}
+        >
+          <hr className="pt-2 dark:border-slate-800"></hr>
+          <p>Incoming Fall 2025!</p>
+        </div>
+      </div>
+      <div
+        onClick={() => (openBox === 7 ? setOpenBox(0) : setOpenBox(7))}
+        className={boxClass}
+      >
+        <h1 className="text-3xl font-bold">Software Engineering Internship</h1>
+        <p className="text-lg pb-2">June 2025 - Present</p>
+        <div
+          className={`${openBox === 7 ? "visibility: visible" : "visibility: hidden"}`}
+        >
+          <hr className="pt-2 dark:border-slate-800"></hr>
+          <p>
+            I am currently working in the Corporate Financial Systems department
+            at Travelers where I am implementing a tool to analyze financial
+            documents and extract relevant data using Amazon Textract. I am also
+            creating a chatbot feature that utilizes Amazon Bedrock to answer
+            questions about financial documents.
+          </p>
+        </div>
+      </div>
+      <div
         onClick={() => (openBox === 6 ? setOpenBox(0) : setOpenBox(6))}
         className={boxClass}
       >
         <h1 className="text-3xl font-bold">Software Development Co-op</h1>
-        <p className="text-lg pb-2">January 2025 - Present</p>
+        <p className="text-lg pb-2">January 2025 - May 2025</p>
         <div
           className={`${openBox === 6 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
-            I am currently working on Odyssey, an interactive learning platform
-            for Khoury College, for my co-op. In this position, I participate in
-            daily standups and work within two-week sprint cycles. I work with
-            Next.js and Tailwind CSS for the frontend and Strapi CMS and
-            PostgreSQL for the backend. I also recently helped transition the
-            deployment from EKS to ECS using the AWS console.
+            For my first co-op, I worked on Odyssey, an interactive learning
+            platform for Khoury College, for my co-op. In this position, I
+            participated in daily standups and worked within two-week sprint
+            cycles. I worked with Next.js and Tailwind CSS for the frontend and
+            Strapi CMS and PostgreSQL for the backend. I also helped transition
+            the deployment from EKS to ECS using the AWS console, and I created
+            the production deployment using Terraform.
           </p>
         </div>
       </div>
@@ -33,16 +79,16 @@ export default function Experience() {
         className={boxClass}
       >
         <h1 className="text-3xl font-bold">Sandbox Head of Community</h1>
-        <p className="text-lg pb-2">January 2025 - Present</p>
+        <p className="text-lg pb-2">January 2025 - April 2025</p>
         <div
           className={`${openBox === 5 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
-            This year, I organized activities and presentations for members of
-            Sandbox, Northeastern&apos;s student-led software consultency, and I
-            also planned three collaborative events with other Computer Science
-            organizations at Northeastern while managing a budget of
+            In this role, I organized activities and presentations for members
+            of Sandbox, Northeastern&apos;s student-led software consultency,
+            and I also planned three collaborative events with other Computer
+            Science organizations at Northeastern while managing a budget of
             approximately $2000.
           </p>
         </div>
@@ -52,17 +98,16 @@ export default function Experience() {
         className={boxClass}
       >
         <h1 className="text-3xl font-bold">CoSMO Outreach Committee</h1>
-        <p className="text-lg pb-2">August 2024 - Present</p>
+        <p className="text-lg pb-2">August 2024 - June 2025</p>
         <div
           className={`${openBox === 4 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
             As a member of the outreach committee for Northeastern&apos;s
-            Computer Science Mentoring Organization (CoSMO), I help plan club
-            events and reach out to other organizations to organize joint
-            events. Most recently, I organized a technical interview prep
-            workshop with Sandbox.
+            Computer Science Mentoring Organization (CoSMO), I helped plan club
+            events and reached out to other organizations to organize joint
+            events.
           </p>
         </div>
       </div>

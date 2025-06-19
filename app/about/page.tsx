@@ -8,6 +8,8 @@ export default function About() {
           alt="Website Photo"
           width={400}
           height={400}
+          priority
+          placeholder="blur"
           className="rounded-lg w-60 h-full sm:w-60 sm:h-full md:w-80 md:h-full lg:w-96 lg:h-full"
         />
       </div>

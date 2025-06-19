@@ -14,7 +14,7 @@ export default function About() {
       <div className="sm:w-1/2 w-full flex flex-col justify-center items-center sm:items-start px-8">
         <div className="text-4xl font-bold mb-4 pt-4">About Me:</div>
         <div className="mb-6 text-xl sm:pr-12">
-          I&apos;m a second-year at Northeastern pursuing a bachelor&apos;s
+          I&apos;m a third-year at Northeastern pursuing a bachelor&apos;s
           degree in Computer Science with a concentration in Software and a
           minor in Mathematics. In my spare time, I love spending time with
           friends, running, and listening to music.

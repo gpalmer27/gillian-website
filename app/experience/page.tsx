@@ -9,11 +9,24 @@ export default function Experience() {
   return (
     <div className="p-8">
       <div
+        onClick={() => (openBox === 10 ? setOpenBox(0) : setOpenBox(10))}
+        className={boxClass}
+      >
+        <h1 className="text-3xl font-bold">Odyssey Project Lead</h1>
+        <p className="text-lg pb-2">August 2025 - Present</p>
+        <div
+          className={`${openBox === 10 ? "visibility: visible" : "visibility: hidden"}`}
+        >
+          <hr className="pt-2 dark:border-slate-800"></hr>
+          <p>Incoming project lead for Odyssey in Fall 2025!</p>
+        </div>
+      </div>
+      <div
         onClick={() => (openBox === 9 ? setOpenBox(0) : setOpenBox(9))}
         className={boxClass}
       >
         <h1 className="text-3xl font-bold">Sandbox Technical Lead</h1>
-        <p className="text-lg pb-2">June 2025 - Present</p>
+        <p className="text-lg pb-2">August 2025 - Present</p>
         <div
           className={`${openBox === 9 ? "visibility: visible" : "visibility: hidden"}`}
         >
@@ -25,13 +38,18 @@ export default function Experience() {
         onClick={() => (openBox === 8 ? setOpenBox(0) : setOpenBox(8))}
         className={boxClass}
       >
-        <h1 className="text-3xl font-bold">CoSMO Co-President</h1>
-        <p className="text-lg pb-2">June 2025 - Present</p>
+        <h1 className="text-3xl font-bold">CoSMO President</h1>
+        <p className="text-lg pb-2">May 2025 - Present</p>
         <div
           className={`${openBox === 8 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
-          <p>Incoming Fall 2025!</p>
+          <p>
+            As president, I oversee other members of the eboard and ensure that
+            all club meetings run smoothly. I also manage a mentor program to
+            help incoming first-years with their transition to Northeastern with
+            a Python-based matching process and bi-weekly check-in messages.
+          </p>
         </div>
       </div>
       <div
@@ -39,17 +57,17 @@ export default function Experience() {
         className={boxClass}
       >
         <h1 className="text-3xl font-bold">Software Engineering Internship</h1>
-        <p className="text-lg pb-2">June 2025 - Present</p>
+        <p className="text-lg pb-2">June 2025 - August 2025</p>
         <div
           className={`${openBox === 7 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
-            I am currently working in the Corporate Financial Systems department
-            at Travelers where I am implementing a tool to analyze financial
-            documents and extract relevant data using Amazon Textract. I am also
-            creating a chatbot feature that utilizes Amazon Bedrock to answer
-            questions about financial documents.
+            At Travelers, I worked in the Corporate Financial Systems department
+            where I implemented a tool to analyze financial documents and
+            extract relevant data using Amazon Textract. I also created a
+            chatbot feature that utilizes Amazon Bedrock to answer questions
+            about financial documents.
           </p>
         </div>
       </div>
@@ -98,7 +116,7 @@ export default function Experience() {
         className={boxClass}
       >
         <h1 className="text-3xl font-bold">CoSMO Outreach Committee</h1>
-        <p className="text-lg pb-2">August 2024 - June 2025</p>
+        <p className="text-lg pb-2">August 2024 - April 2025</p>
         <div
           className={`${openBox === 4 ? "visibility: visible" : "visibility: hidden"}`}
         >

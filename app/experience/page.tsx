@@ -68,7 +68,7 @@ export default function Experience() {
             Computer Science Mentoring Organization (CoSMO), I helped plan club
             events and reached out to other organizations to organize joint
             events. I also managed a mentor program to help incoming first-years
-            with their transition to Northeastern with a Python-based matching 
+            with their transition to Northeastern with a Python-based matching
             process and bi-weekly check-in messages.
           </p>
         </div>

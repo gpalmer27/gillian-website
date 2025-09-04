@@ -9,29 +9,47 @@ export default function Experience() {
   return (
     <div className="p-8">
       <div
-        onClick={() => (openBox === 9 ? setOpenBox(0) : setOpenBox(9))}
+        onClick={() => (openBox === 10 ? setOpenBox(0) : setOpenBox(10))}
         className={boxClass}
       >
         <h1 className="text-3xl font-bold">Odyssey Project Lead</h1>
         <p className="text-lg pb-2">August 2025 - Present</p>
         <div
-          className={`${openBox === 9 ? "visibility: visible" : "visibility: hidden"}`}
+          className={`${openBox === 10 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>Incoming project lead for Odyssey in Fall 2025!</p>
         </div>
       </div>
       <div
-        onClick={() => (openBox === 8 ? setOpenBox(0) : setOpenBox(8))}
+        onClick={() => (openBox === 9 ? setOpenBox(0) : setOpenBox(9))}
         className={boxClass}
       >
         <h1 className="text-3xl font-bold">Sandbox Technical Lead</h1>
         <p className="text-lg pb-2">August 2025 - Present</p>
         <div
-          className={`${openBox === 8 ? "visibility: visible" : "visibility: hidden"}`}
+          className={`${openBox === 9 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>Incoming tech lead for Cooper in Fall 2025!</p>
+        </div>
+      </div>
+      <div
+        onClick={() => (openBox === 8 ? setOpenBox(0) : setOpenBox(8))}
+        className={boxClass}
+      >
+        <h1 className="text-3xl font-bold">CoSMO President</h1>
+        <p className="text-lg pb-2">May 2025 - Present</p>
+        <div
+          className={`${openBox === 8 ? "visibility: visible" : "visibility: hidden"}`}
+        >
+          <hr className="pt-2 dark:border-slate-800"></hr>
+          <p>
+            As president, I oversee other members of the eboard and ensure that
+            all club meetings run smoothly. I also manage a mentor program to
+            help incoming first-years with their transition to Northeastern with
+            a Python-based matching process and bi-weekly check-in messages.
+          </p>
         </div>
       </div>
       <div
@@ -57,30 +75,10 @@ export default function Experience() {
         onClick={() => (openBox === 6 ? setOpenBox(0) : setOpenBox(6))}
         className={boxClass}
       >
-        <h1 className="text-3xl font-bold">CoSMO Outreach Committee</h1>
-        <p className="text-lg pb-2">August 2024 - August 2025</p>
-        <div
-          className={`${openBox === 6 ? "visibility: visible" : "visibility: hidden"}`}
-        >
-          <hr className="pt-2 dark:border-slate-800"></hr>
-          <p>
-            As a member of the outreach committee for Northeastern&apos;s
-            Computer Science Mentoring Organization (CoSMO), I helped plan club
-            events and reached out to other organizations to organize joint
-            events. I also managed a mentor program to help incoming first-years
-            with their transition to Northeastern with a Python-based matching
-            process and bi-weekly check-in messages.
-          </p>
-        </div>
-      </div>
-      <div
-        onClick={() => (openBox === 5 ? setOpenBox(0) : setOpenBox(5))}
-        className={boxClass}
-      >
         <h1 className="text-3xl font-bold">Software Development Co-op</h1>
         <p className="text-lg pb-2">January 2025 - May 2025</p>
         <div
-          className={`${openBox === 5 ? "visibility: visible" : "visibility: hidden"}`}
+          className={`${openBox === 6 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
@@ -95,13 +93,13 @@ export default function Experience() {
         </div>
       </div>
       <div
-        onClick={() => (openBox === 4 ? setOpenBox(0) : setOpenBox(4))}
+        onClick={() => (openBox === 5 ? setOpenBox(0) : setOpenBox(5))}
         className={boxClass}
       >
         <h1 className="text-3xl font-bold">Sandbox Head of Community</h1>
         <p className="text-lg pb-2">January 2025 - April 2025</p>
         <div
-          className={`${openBox === 4 ? "visibility: visible" : "visibility: hidden"}`}
+          className={`${openBox === 5 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
@@ -110,6 +108,24 @@ export default function Experience() {
             and I also planned three collaborative events with other Computer
             Science organizations at Northeastern while managing a budget of
             approximately $2000.
+          </p>
+        </div>
+      </div>
+      <div
+        onClick={() => (openBox === 4 ? setOpenBox(0) : setOpenBox(4))}
+        className={boxClass}
+      >
+        <h1 className="text-3xl font-bold">CoSMO Outreach Committee</h1>
+        <p className="text-lg pb-2">August 2024 - April 2025</p>
+        <div
+          className={`${openBox === 4 ? "visibility: visible" : "visibility: hidden"}`}
+        >
+          <hr className="pt-2 dark:border-slate-800"></hr>
+          <p>
+            As a member of the outreach committee for Northeastern&apos;s
+            Computer Science Mentoring Organization (CoSMO), I helped plan club
+            events and reached out to other organizations to organize joint
+            events.
           </p>
         </div>
       </div>

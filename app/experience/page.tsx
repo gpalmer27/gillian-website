@@ -12,13 +12,18 @@ export default function Experience() {
         onClick={() => (openBox === 10 ? setOpenBox(0) : setOpenBox(10))}
         className={boxClass}
       >
-        <h1 className="text-3xl font-bold">Odyssey Project Lead</h1>
+        <h1 className="text-3xl font-bold">Senior Software Engineer</h1>
         <p className="text-lg pb-2">August 2025 - Present</p>
         <div
           className={`${openBox === 10 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
-          <p>Incoming project lead for Odyssey in Fall 2025!</p>
+          <p>
+            I currently oversee the development of Odyssey, a learning platform
+            for Northeastern students. In this role, I organize tickets in a
+            Linear project board and hold daily standups with the team to ensure
+            that we are on track for our weekly sprints.
+          </p>
         </div>
       </div>
       <div
@@ -31,7 +36,11 @@ export default function Experience() {
           className={`${openBox === 9 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
-          <p>Incoming tech lead for Cooper in Fall 2025!</p>
+          <p>
+            This fall, I am the tech lead for Cooper, where I help my team stay
+            on top of our tickets and prepare for releasing an MVP for Cooper in
+            the next couple of months.
+          </p>
         </div>
       </div>
       <div

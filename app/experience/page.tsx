@@ -9,20 +9,35 @@ export default function Experience() {
   return (
     <div className="p-8">
       <div
+        onClick={() => (openBox === 11 ? setOpenBox(0) : setOpenBox(11))}
+        className={boxClass}
+      >
+        <h1 className="text-3xl font-bold">Software Engineer Intern</h1>
+        <p className="text-lg pb-2">January 2026 - Present</p>
+        <div
+          className={`${openBox === 11 ? "visibility: visible" : "visibility: hidden"}`}
+        >
+          <hr className="pt-2 dark:border-slate-800"></hr>
+          <p>
+            Incoming full-stack software engineer intern on the analytics team
+            at Klaviyo!
+          </p>
+        </div>
+      </div>
+      <div
         onClick={() => (openBox === 10 ? setOpenBox(0) : setOpenBox(10))}
         className={boxClass}
       >
-        <h1 className="text-3xl font-bold">Senior Software Engineer</h1>
+        <h1 className="text-3xl font-bold">Sandbox Technical Lead</h1>
         <p className="text-lg pb-2">August 2025 - Present</p>
         <div
           className={`${openBox === 10 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
-            I currently oversee the development of Odyssey, a learning platform
-            for Northeastern students. In this role, I organize tickets in a
-            Linear project board and hold daily standups with the team to ensure
-            that we are on track for our weekly sprints.
+            I am the current tech lead for Cooper, where I help my team stay on
+            top of our tickets and prepare for releasing an MVP for Cooper in
+            the next couple of months.
           </p>
         </div>
       </div>
@@ -30,16 +45,17 @@ export default function Experience() {
         onClick={() => (openBox === 9 ? setOpenBox(0) : setOpenBox(9))}
         className={boxClass}
       >
-        <h1 className="text-3xl font-bold">Sandbox Technical Lead</h1>
-        <p className="text-lg pb-2">August 2025 - Present</p>
+        <h1 className="text-3xl font-bold">Senior Software Engineer</h1>
+        <p className="text-lg pb-2">August 2025 - December 2025</p>
         <div
           className={`${openBox === 9 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
-            This fall, I am the tech lead for Cooper, where I help my team stay
-            on top of our tickets and prepare for releasing an MVP for Cooper in
-            the next couple of months.
+            In this role, I oversaw the development of Odyssey, a learning
+            platform for Northeastern students. In this role, I organized
+            tickets in a Linear project board and held daily standups with the
+            team to ensure that we were on track for our weekly sprints.
           </p>
         </div>
       </div>
@@ -48,14 +64,14 @@ export default function Experience() {
         className={boxClass}
       >
         <h1 className="text-3xl font-bold">CoSMO President</h1>
-        <p className="text-lg pb-2">May 2025 - Present</p>
+        <p className="text-lg pb-2">May 2025 - December 2025</p>
         <div
           className={`${openBox === 8 ? "visibility: visible" : "visibility: hidden"}`}
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
-            As president, I oversee other members of the eboard and ensure that
-            all club meetings run smoothly. I also manage a mentor program to
+            As president, I oversaw other members of the eboard and ensured that
+            all club meetings ran smoothly. I also managed a mentor program to
             help incoming first-years with their transition to Northeastern with
             a Python-based matching process and bi-weekly check-in messages.
           </p>

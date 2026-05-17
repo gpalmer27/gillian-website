@@ -35,7 +35,7 @@ export default function Projects() {
               </a>
             </button>
             <button type="button" className={buttonClass}>
-              <a href="https://coopernu.vercel.app/" target="blank">
+              <a href="https://coopernu.com/" target="blank">
                 View Website
               </a>
             </button>

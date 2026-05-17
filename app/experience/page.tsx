@@ -19,8 +19,8 @@ export default function Experience() {
         >
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
-            Incoming full-stack software engineer intern on the analytics team
-            at Klaviyo!
+            Full-stack software engineer intern on the analytics team at
+            Klaviyo!
           </p>
         </div>
       </div>
@@ -36,8 +36,8 @@ export default function Experience() {
           <hr className="pt-2 dark:border-slate-800"></hr>
           <p>
             I am the current tech lead for Cooper, where I help my team stay on
-            top of our tickets and prepare for releasing an MVP for Cooper in
-            the next couple of months.
+            top of our tickets and are planning on shipping this project this
+            summer!
           </p>
         </div>
       </div>

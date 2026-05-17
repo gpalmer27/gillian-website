@@ -18,7 +18,7 @@ export default function About() {
           I&apos;m a third-year at Northeastern pursuing a bachelor&apos;s
           degree in Computer Science with a concentration in Software and a
           minor in Mathematics. In my spare time, I love spending time with
-          friends, running, and listening to music.
+          friends, rock climbing, and listening to music.
         </div>
         <button
           type="button"

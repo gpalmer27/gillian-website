@@ -2,18 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 @layer utilities {
@@ -23,15 +13,11 @@
 }
 
 ::selection {
-  background: rgb(0, 120, 215);
-  color: white;
+  background: #171717;
+  color: #ffffff;
 }
 
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.dark ::selection {
+  background: #ffffff;
+  color: #000000;
 }

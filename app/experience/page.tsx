@@ -15,7 +15,7 @@ const experiences = [
   },
   {
     title: "Senior Software Engineer",
-    org: "Sandbox",
+    org: "NExT Consulting",
     date: "August 2025 — December 2025",
     description:
       "In this role, I oversaw the development of Odyssey, a learning platform for Northeastern students. In this role, I organized tickets in a Linear project board and held daily standups with the team to ensure that we were on track for our weekly sprints.",
